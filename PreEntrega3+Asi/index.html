@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Coffee Shop</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Cafeteria</h1>
+        <div class="coffee-form">
+            <label for="coffeeType">Seleccione Cafe:</label>
+            <select id="coffeeType">
+                <option value="espresso">Espresso</option>
+                <option value="latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+            </select>
+            <label for="quantity">Cantidad:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button id="orderButton">Añadir a la orden</button>
+        </div>
+        <div id="orderResult"></div>
+        <div id="totalDisplay">Total: $0.00</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
